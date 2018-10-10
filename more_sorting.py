@@ -20,7 +20,7 @@ for abbr, name in  sorted(airports.items(), key=by_value):
 print('-' * 60)
 
 
-for abbr, name in  sorted(airports.items(), key=lambda e: (e[1], e[0])):
+for abbr, name in sorted(airports.items(), key=lambda wombat: (wombat[1], wombat[0])):
     print(abbr, name)
 
 
