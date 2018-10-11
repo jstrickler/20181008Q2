@@ -27,7 +27,8 @@ class Dog(*bases):
                     getattr(base, 'beep')(self)
         print("Dog beeping")
 
-d = Dog()   #   Dog d = new Dog()
+
+d = Dog()  #  Dog d = new Dog()
 d.bark()
 type(d).bark(d)  # same!
 

@@ -55,4 +55,21 @@ class CardDeck():
         return cls.SUITS
 
 
+    def __len__(self):
+        return len(self.cards)
 
+    def __str__(self):
+        my_type = type(self)
+        my_name = my_type.__name__
+        return f"{my_name}({len(self)})"
+
+    def __repr__(self):
+        return str(self.cards)
+
+
+    def __add__(self, other):
+        my_type = type(self)
+        print(my_type)
+        tmp = my_type(self.dealer) # tmp = CardDeck(...)
+        tmp._cards = self.cards + other.cards
+        return tmp

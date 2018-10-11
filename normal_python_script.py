@@ -4,11 +4,6 @@ A wonderful example for my excellent klass.
 
 Blah blah and more blah
 """
-import sys  # standard library imports
-# non-standard-library imports
-# local imports
-
-# "CONSTANTS"
 
 MAX_VALUE = 25
 
