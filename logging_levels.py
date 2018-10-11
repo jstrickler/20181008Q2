@@ -3,8 +3,8 @@
 import logging
 
 logging.basicConfig(
-    filename='../TEMP/levels.log',
-    level=logging.WARN,
+    filename='TEMP/levels.log',
+    level=logging.ERROR,
 ) # <1>
 
 logging.warning('This message will be logged') # <2>

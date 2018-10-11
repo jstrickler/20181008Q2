@@ -2,6 +2,9 @@
 
 import json
 
+class Spam():
+    pass
+
 george = [{
     'num': 1,
     'lname': 'Washington',
@@ -13,11 +16,11 @@ george = [{
     'dbirth': [1732, 2, 22],
     'ddeath': [1799, 12, 14],
     'assassinated': False,
-    'party': 'no party',
-}, {'foo': 'bar'}]  # <1>
+    'party': None,
+}, {'foo': 'bar'}, Spam()]  # <1>
 
-js = json.dumps(george, indent=8)  # <2>
+js = json.dumps(george, indent=4)  # <2>
 print(js)
 
-with open('george.json', 'w') as JS:  # <3>
-    json.dump(george, JS)  # <4>
+with open('george.json', 'w') as george_out:  # <3>
+    json.dump(george, george_out, indent=4)  # <4>

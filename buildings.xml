@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<buildings category="office">
+  <building building_name="Berrington">
+    <size>40000</size>
+  </building>
+  <building building_name="Radford">
+    <size>60000</size>
+  </building>
+  <building building_name="Plaza">
+    <size>75000</size>
+  </building>
+</buildings>

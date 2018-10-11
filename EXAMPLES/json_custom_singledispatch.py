@@ -22,6 +22,9 @@ class Parrot():
     def color(self):
         return self._color
 
+    def to_json(self):
+        return {'name': self.name, 'color': self.color}
+
 
 parrots = [
     Parrot('Polly', 'green'),
@@ -40,6 +43,8 @@ data = {
 
 @singledispatch
 def encode(obj):
+    if hasattr(obj, 'to_json'):
+        return obj.to_json()
     return obj
 
 
