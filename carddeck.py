@@ -1,17 +1,34 @@
 #!/usr/bin/env python
+"""
+Provide CardDeck class
+
+"""
 import random
 
 
 class CardDeck():
+    """
+    One deck of 52 cards
+    """
     RANKS = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
     SUITS = 'Clubs Diamonds Hearts Spades'.split()
 
     def __init__(self, dealer):
+        """
+        Constructor
+
+        :param dealer: Dealer name as a string
+        """
         self._dealer = dealer
         self._create_deck()
 
 
     def _create_deck(self):
+        """
+        Create cards as list of (RANK, SUIT) tuples
+
+        :return:
+        """
         self._cards = []
         for suit in self.SUITS:
             for rank in self.RANKS:

@@ -1,6 +1,8 @@
 from datetime import date
 
 
+
+
 class President():
     def __init__(self, index):
         self._get_data(index)
@@ -43,7 +45,7 @@ class President():
     def last_name(self):
         return self._lname
 
-    @property
+    @property +
     def first_name(self):
         return self._fname
 
