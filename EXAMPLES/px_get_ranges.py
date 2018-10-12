@@ -14,7 +14,9 @@ def print_first_and_last_names(ws):
     """Print first and last names of all presidents"""
     pres_range = ws['B2':'C46']  # cell range
     for row in pres_range:  # row object
-        print(row[1].value, row[0].value)
+        for col in row:
+            print(col.value)
+        print('===')
 
 
 if __name__ == '__main__':

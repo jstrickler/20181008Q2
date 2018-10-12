@@ -25,6 +25,7 @@ class SimpleThread(threading.Thread):
             WORD_LIST.append(self._word.upper())
 
 all_threads = []  # <8>
+
 for i, random_word in enumerate(WORDS, 1):
     t = SimpleThread(i, random_word)  # <9>
     all_threads.append(t)  # <10>

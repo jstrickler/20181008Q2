@@ -7,3 +7,4 @@ with open('../DATA/knights.csv') as knights_in:
         print('{:4s} {:9s} {}'.format(
             title, name, quest
         ))
+

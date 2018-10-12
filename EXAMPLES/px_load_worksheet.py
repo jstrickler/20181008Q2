@@ -3,7 +3,7 @@ import openpyxl as px
 print(px.__version__)  # should be >= 2.2 or this code will not work
 
 def main():
-    wb = px.load_workbook('../DATA/presidents.xlsx')
+    wb = px.load_workbook('../DATA/presidents.xlsx', data_only=True)
 
 # three ways to get to a worksheet:
 

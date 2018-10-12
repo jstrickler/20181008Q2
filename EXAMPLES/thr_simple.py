@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 
-import threading
+from threading import Thread
 import random
 import time
 
 
-class SimpleThread(threading.Thread):
+class SimpleThread(Thread):
     def __init__(self, num):
         super().__init__()  # <1>
         self._threadnum = num
 
     def run(self):  # <2>
-        time.sleep(random.randint(1, 10))
+        time.sleep(random.randint(1, 3))
         print("Hello from thread {}".format(self._threadnum))
 
 
