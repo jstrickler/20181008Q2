@@ -9,3 +9,4 @@ img = openpyxl.drawing.image.Image(IMAGE)
 img.anchor(ws['Z100'])
 ws.add_image(img)
 wb.save('image_test.xlsx')
+

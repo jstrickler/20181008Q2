@@ -28,22 +28,3 @@ print('m1.A.transpose() =>\n', m1.A.transpose())  # <6>
 print()
 
 print('m1.A.transpose() * m2.A =>\n', m1.A.transpose() * m2.A)  # <7>
-
-print()
-
-
-
-a = np.array([[1, 15],
-                [3, 25]])  # <3>
-
-b = np.array([[4, 9],
-                [7, 12]])
-
-print(a * b)
-print()
-# print(a.A x b.A)
-# print()
-# print(a.A @ b.A)
-# print()
-print(a @ b)
-

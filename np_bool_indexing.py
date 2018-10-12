@@ -12,7 +12,7 @@ a = np.array(
 print('a =>', a, '\n')
 
 i = a > 50  # <2>
-print('i = (a > 50) =>', i, '\n')
+print('i (a > 50) =>', i, '\n')
 
 print('a[i] =>', a[i], '\n')  # <3>
 
